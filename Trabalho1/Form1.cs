@@ -7,10 +7,6 @@ namespace Trabalho1
             InitializeComponent();
         }
 
-        private void painel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
 
 
@@ -39,13 +35,59 @@ namespace Trabalho1
                 decimal margem = ((precoVenda - precoCusto) / precoCusto) * 100;
                 txtMargem.Text = margem.ToString("N2");
             }
+            else if (precoVenda > 0)
+            {
+                decimal margem = ((precoVenda - precoCusto) / precoVenda) * 100;
+                txtMargem.Text = margem.ToString("N2");
+            }
             else
             {
                 txtMargem.Text = "0,00";
             }
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            if (btnSalvar.Text == "Salvar")
+            {
+
+
+            }
+            else
+            {
+
+
+
+            }
+
+
+
+
+
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            txtCodigo.Clear();
+            txtNome.Clear();
+            txtDescricao.Clear();
+            txtPrecoCusto.Clear();
+            txtPrecoVenda.Clear();
+            txtMargem.Clear();
+            txtStockInicial.Clear();
+            txtStockMinimo.Clear();
+
+            cmbCategoria.SelectedIndex = -1;
+            cmbFornecedor.SelectedIndex = -1;
+
+            chkProdutoAtivo.Checked = true;
+            dtpDataCadastro.Value = DateTime.Now;
+
+            txtNome.Focus();
+        }
+
+        private void label24_Click(object sender, EventArgs e)
         {
 
         }
