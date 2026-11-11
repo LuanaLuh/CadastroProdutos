@@ -117,7 +117,6 @@
             btnNovo.TabIndex = 1;
             btnNovo.Text = "Novo";
             btnNovo.UseVisualStyleBackColor = true;
-         
             // 
             // btnSalvar
             // 
@@ -354,6 +353,7 @@
             // 
             // txtMargem
             // 
+            txtMargem.BackColor = SystemColors.ScrollBar;
             txtMargem.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtMargem.Location = new Point(89, 48);
             txtMargem.Margin = new Padding(3, 2, 3, 2);
@@ -613,11 +613,14 @@
             // 
             // textBox1
             // 
+            textBox1.BackColor = SystemColors.ScrollBar;
+            textBox1.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox1.Location = new Point(6, 35);
             textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(148, 27);
+            textBox1.Size = new Size(148, 22);
             textBox1.TabIndex = 5;
+            textBox1.Text = "000000";
             // 
             // label23
             // 

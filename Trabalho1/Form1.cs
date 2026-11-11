@@ -49,6 +49,13 @@ namespace Trabalho1
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            string TextoCodigo = txtCodigo.Text;
+            string TextoFornecedor = txtFornecedor.Text;
+            string TextoCategoria = txtCategoria.Text;
+            string TextoPrecoCusto = txtPrecoCusto.Text;
+            string TextoPrecoVenda = txtPrecoVenda.Text;
+
+
             if (btnSalvar.Text == "Salvar")
             {
 
@@ -67,26 +74,7 @@ namespace Trabalho1
 
         }
 
-        private void btnNovo_Click(object sender, EventArgs e)
-        {
-            txtCodigo.Clear();
-            txtNome.Clear();
-            txtDescricao.Clear();
-            txtPrecoCusto.Clear();
-            txtPrecoVenda.Clear();
-            txtMargem.Clear();
-            txtStockInicial.Clear();
-            txtStockMinimo.Clear();
-
-            cmbCategoria.SelectedIndex = -1;
-            cmbFornecedor.SelectedIndex = -1;
-
-            chkProdutoAtivo.Checked = true;
-            dtpDataCadastro.Value = DateTime.Now;
-
-            txtNome.Focus();
-        }
-
+       
         private void label24_Click(object sender, EventArgs e)
         {
 
